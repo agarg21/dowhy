@@ -52,7 +52,7 @@ jobs:
     - name: Install graphviz
       run: |
         sudo apt-get update -q
-        sudo apt install graphviz libgraphviz-dev graphviz-dev pkg-config
+        sudo apt install graphviz libgraphviz-dev graphviz-dev pkg-config libopenblas-dev gfortran
 
     - name: Install dependencies
       if: steps.cache-venv.outputs.cache-hit != 'true'
